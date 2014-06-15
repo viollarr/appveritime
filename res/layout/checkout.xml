@@ -1,0 +1,249 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CCFF00"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:id="@+id/linear"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#F2F2F2"
+	    android:orientation="vertical" >
+	    
+		<LinearLayout
+	        android:id="@+id/espaco2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#cccccc"
+	        android:paddingRight="15dp" >
+	
+		    <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" >
+		
+		        <ImageView
+		        	android:id="@+id/imageView1"
+		            android:layout_width="30dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="15dp"
+		            android:src="@drawable/ic_menu" />
+		
+		        <ImageView
+		            android:id="@+id/imageView"
+		            android:layout_width="100dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="0dp"
+		            android:src="@drawable/ic_topo" />
+		
+		    </RelativeLayout>
+		</LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#000000"
+	        android:padding="10dp" >
+	
+	        <TextView
+	            android:id="@+id/texto"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/labelTituloCheckout"
+	            android:textColor="#fff" />
+	    </LinearLayout>
+	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="15dp" >
+		
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >	
+		
+			<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="#F2F2F2">
+			</TableLayout>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#F2F2F2"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp" >
+		
+			<TableLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="#F2F2F2">
+			 <!-- Inicio texto Select -->	
+			    <TableRow
+			        android:id="@+id/tableRow1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+					
+					<TextView
+					    android:id="@+id/txtSelect"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="left"
+					    android:paddingLeft="3dp"
+					    android:text="@string/labelSelect" />
+	
+			    </TableRow>  
+			    <!-- Fim texto Select -->
+			    <!-- Inicio conteudo Select -->
+				<TableRow
+			        android:id="@+id/tableRow2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+					
+					<Spinner 
+					    android:id="@+id/status"
+					    android:layout_width="220dp"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="left"/>
+			        
+				</TableRow>	    		    
+			    <!-- Fim conteudo Select -->
+			    <!-- Inicio texto contra senha -->					    		    
+			     <TableRow
+			        android:id="@+id/tableRow3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+					
+					<TextView
+					    android:id="@+id/labelContraSenha"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="left"
+					    android:paddingLeft="3dp"
+					    android:text="@string/labelContraSenha" />
+	
+			    </TableRow>  
+			    <!-- Fim texto contra senha -->
+			    <!-- Inicio imput contra senha -->					    		    
+				<TableRow
+			        android:id="@+id/tableRow4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+					
+			        <EditText
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:id="@+id/txtContraSenha"
+			            android:hint="@string/texto_opcional" />
+			        
+				</TableRow>
+			    <!-- Fim imput contra senha -->
+			    <!-- Inicio texto observação -->					    		    
+			    <TableRow
+			        android:id="@+id/tableRow5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content">
+					
+					<TextView
+					    android:id="@+id/labelObservacao"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="left"
+					    android:paddingLeft="3dp"
+					    android:text="@string/labelObservacao" />
+	
+			    </TableRow> 
+			    <!-- Fim texto observação -->
+			    <!-- Inicio imput observação -->					    		    
+				<TableRow
+			        android:id="@+id/tableRow6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" >
+											    
+			        <EditText
+			            android:id="@+id/txtObservacao"
+			            android:layout_width="300dp"
+			            android:layout_height="wrap_content"
+			            android:singleLine="false"
+			            android:lines="5"
+			            android:inputType="textMultiLine"
+			            android:scrollHorizontally="true"
+			            android:hint="@string/texto_entrada"
+			            android:gravity="top|left" />
+			
+				</TableRow>
+			    <TableRow
+			        android:id="@+id/tableRow7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="20dp">
+			    </TableRow>
+			</TableLayout>	
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">	
+	
+			<RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"
+		        android:paddingRight="5dp"
+		        android:paddingBottom="15dp"
+		        android:paddingTop="15dp" >
+	
+			<Button
+			    android:id="@+id/btnVoltar"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:background="@drawable/botao_voltar"
+			    android:text="@string/labelCancelar"
+			    android:textColor="#FFFFFF"
+			    android:textSize="14sp" />
+	
+		    <Button
+		        android:id="@+id/validar"
+		        android:layout_width="200dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:background="@drawable/botao_check"
+		        android:paddingRight="0dp"
+		        android:text="@string/labelConfirmar"
+		        android:textColor="#FFFFFF"
+		        android:textSize="14sp" />
+		    	    
+		     </RelativeLayout>       	    						
+		</LinearLayout>	
+		<TableLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="5dp"
+		    android:baselineAligned="true"
+		    android:background="#CCFF00" >
+		    <!-- inicio da linha Verde-->
+		    <TableRow
+		        android:id="@+id/tableRow8"
+		        android:layout_width="fill_parent"
+		        android:layout_height="5dp"
+		        android:baselineAligned="true"
+		        android:padding="5dip"
+		        android:background="#CCFF00" >
+		    </TableRow>
+			<!-- fim da linha Verde -->
+		</TableLayout>						
+				
+	</LinearLayout>
+</ScrollView>	

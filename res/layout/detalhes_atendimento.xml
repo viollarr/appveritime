@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    android:fillViewport="true" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#F2F2F2" >
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="5dp"
+	        android:background="#CCFF00" >
+	    </LinearLayout>	    
+	    	    	    
+		<LinearLayout
+	        android:id="@+id/espaco2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#cccccc"
+	        android:paddingRight="15dp" >
+	
+		    <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" >
+		
+		        <ImageView
+		        	android:id="@+id/imageView1"
+		            android:layout_width="30dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="15dp"
+		            android:src="@drawable/ic_menu" />
+		
+		        <ImageView
+		            android:id="@+id/imageView"
+		            android:layout_width="100dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="0dp"
+		            android:src="@drawable/ic_topo" />
+		
+		    </RelativeLayout>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#000000"
+	        android:padding="10dp" >
+	
+	        <TextView
+	            android:id="@+id/texto"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	
+	        <TextView
+	            android:id="@+id/textView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/labelTituloTela"
+	            android:textColor="#fff" />
+	    </LinearLayout>	
+	
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:paddingTop="15dp" >
+
+		<Button
+		    android:id="@+id/btnVoltar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:text="@string/texto_btn_voltar"
+		    android:textColor="#FFFFFF"
+		    android:textSize="14sp"
+		    android:background="@drawable/botao_voltar" />
+
+	    <Button
+	        android:id="@+id/btnGps"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="0dp"
+	        android:textColor="#FFFFFF"
+	        android:textSize="14sp"
+	        android:background="@drawable/botao_check" />
+	    
+	     </RelativeLayout>  
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingBottom="15dp" >
+
+	</LinearLayout>	    
+
+		<TableLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="4"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:shrinkColumns="1" >
+			
+			<!-- inicio da linha Cliente -->
+			<TableRow
+			    android:id="@+id/tableRow1"
+			    android:background="#ffffff"
+			    android:padding="5dip" >
+			          	
+			    <TextView
+					android:text="@string/labelNomeCliente"
+					android:textStyle="bold" />
+			
+			    <TextView
+					android:id="@+id/txtEmpresa"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp" />
+			
+			</TableRow>   
+			<!-- fim da linha Cliente -->
+		     
+		    <!-- inicio da linha Titulo -->
+			<TableRow
+			    android:id="@+id/tableRow2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:padding="5dip" >
+			
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/labelTituloAtendimento"
+			        android:textStyle="bold" />
+			
+				<TextView
+					android:id="@+id/txtTitulo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp"/>
+			
+			</TableRow>
+			<!-- fim da linha Titulo -->
+			
+		    <!-- inicio da linha Endereço -->
+		    <TableRow
+		        android:id="@+id/tableRow3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip"
+		        android:background="#ffffff" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/labelEndereco"
+		            android:textStyle="bold" />
+		 
+			    <TextView
+				    android:id="@+id/txtEndereco"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="5dp"/>
+			    
+		    </TableRow>    
+		    <!-- fim da linha Endereço -->
+		
+		    <!-- inicio da linha Cidade -->
+		    <TableRow
+		        android:id="@+id/tableRow4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/labelCidade"
+		            android:textStyle="bold" />
+		 
+		    	<TextView
+		    		android:id="@+id/txtCidade"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:paddingLeft="5dp"/>
+		    	
+			</TableRow>
+		    <!-- fim da linha Cidade-->
+		    
+		    <!-- inicio da linha Rota -->
+		    <TableRow
+		        android:id="@+id/tableRow5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip"
+		        android:background="#ffffff" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/labelRota"
+		            android:textStyle="bold" />
+
+		        <Button
+		            android:id="@+id/rota"
+		            android:layout_width="fill_parent"
+		            android:layout_height="51dp"
+		            android:layout_weight="0.74"
+		            android:drawableLeft="@drawable/ic_rota"
+		            android:gravity="center_vertical|center_horizontal"
+		            android:text="@string/txtRota"
+		            android:textColor="#000000"
+		            android:textSize="12sp" />
+			    
+		    </TableRow>    
+		    <!-- fim da linha Rota -->
+		
+		    <!-- inicio da linha Data/Hora -->
+		    <TableRow
+		        android:id="@+id/tableRow6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip" >
+			
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/labelDataHora"
+		            android:textStyle="bold" />
+		 
+		    	<TextView
+		    		android:id="@+id/txtDataHora"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:paddingLeft="5dp"/>
+		
+		    </TableRow>
+			<!-- fim da linha Data/Hora -->
+		
+		    <!-- inicio da linha Tempo Estimado -->
+		    <TableRow
+		        android:id="@+id/tableRow7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip" 
+		        android:background="#ffffff" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/labelTempoEstimado"
+		            android:textStyle="bold" />
+		 
+		    	<TextView
+		    		android:id="@+id/txtTempoEstimado"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:paddingLeft="5dp"/>
+		
+		    </TableRow>
+			<!-- fim da linha Tempo Estimado -->
+		
+		    <!-- inicio da linha Descrição-->
+		    <TableRow
+		        android:id="@+id/tableRow8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dip" >
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/labelDescricao"
+		            android:textStyle="bold" />
+		 
+		    	<TextView
+		    		android:id="@+id/txtDescricao"
+			    	android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:paddingLeft="5dp"
+			    	android:paddingRight="5dp"/>
+		        
+		    </TableRow>
+			<!-- fim da linha Descrição -->
+
+			
+		</TableLayout>
+		<TableLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="5dp"
+		    android:baselineAligned="true"
+		    android:background="#CCFF00" >
+		    <!-- inicio da linha Verde-->
+		    <TableRow
+		        android:id="@+id/tableRow8"
+		        android:layout_width="fill_parent"
+		        android:layout_height="5dp"
+		        android:baselineAligned="true"
+		        android:padding="5dip"
+		        android:background="#CCFF00" >
+		    </TableRow>
+			<!-- fim da linha Verde -->
+		</TableLayout>						
+	</LinearLayout>	
+		
+</ScrollView>

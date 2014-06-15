@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/atendimentoRelativo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dip" >
+ 
+	
+    <!-- Nome do CLiente-->
+    <TextView
+        android:id="@+id/clienteAtendimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Endereço -->
+
+    <TextView
+        android:id="@+id/enderecoAtendimento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clienteAtendimento"
+        android:layout_marginTop="1dip"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+    
+    <!-- data hora -->
+
+    <TextView
+        android:id="@+id/tituloDataHoraAtendimento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enderecoAtendimento"
+        android:layout_marginTop="1dip"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+		
+	
+</RelativeLayout>

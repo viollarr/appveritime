@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- TEXTO GERAL DO SISTEMA -->
+    <string name="app_name">Veritime</string>
+    <string name="nome">Login:</string>
+    <string name="menu_settings">Settings</string>
+    <string name="senha">Senha: </string>
+    <string name="texto_login_input">Informe o seu email ou login</string>
+    <string name="texto_senha_input">Informe a sua senha</string>
+    <string name="button">Login</string>
+    <string name="labelSelect">Status: </string>
+    <string name="labelContraSenha">Assinatura: </string>
+    <string name="labelObservacao">Obs: </string>
+    <string name="texto_opcional">opcional...</string>
+    <string name="texto_entrada">enter text...</string>
+    <string name="texto_btn_atendimento">  Em Andamento</string>
+    <string name="texto_btn_espera">  Em Espera</string>
+    <string name="texto_btn_atraso">  Em Atraso</string>
+    <string name="texto_btn_finalizados">  Finalizados</string>
+    <string name="texto_btn_sincronizar">Sincronizar Dados</string>
+    <string name="texto_btn_local">Meu Local</string>
+    <string name="texto_btn_voltar">Voltar</string>
+    <string name="texto_link_site">www.veritime.com.br</string>
+    
+    <!-- FIM TEXTO GERAL DO SISTEMA -->
+    
+    <!-- TEXTOS LABEL DETALHES -->
+    	<string name="labelTituloTela">Detalhes do Atendimento</string>
+    	<string name="labelNomeCliente">Cliente:</string>
+    	<string name="labelTituloAtendimento">Atendimento:</string>
+    	<string name="labelDataHora">Data/Hora:</string>
+    	<string name="labelTempoEstimado">Duração:</string>
+    	<string name="labelEndereco">Endereço:</string>
+    	<string name="labelCidade">Cidade:</string>
+    	<string name="labelRota">Rota:</string>
+    	<string name="txtRota">visualizar rota</string>
+    	<string name="labelDescricao">Observações:</string>
+    <!-- FIM LABEL DETALHES -->
+    
+    
+    <!-- TEXTOS LABEL CHECK OUT -->
+    	<string name="labelCancelar">Cancelar</string>
+    	<string name="labelConfirmar">Confirmar Checkout</string>
+    	<string name="labelTituloCheckout">Checkout</string>
+    <!-- FIM LABEL DETALHES -->
+    
+    <!-- TEXTOS DE NOTIFICAÇÕES -->
+    	<!-- Etapa de Login -->
+		    <string name="texto_login_sem_internet">Para o primeiro acesso ao sistema é preciso conexão com internet.</string>
+		    <string name="texto_login_campo_vazio">Login ou senha não informados.</string>
+		    <string name="texto_login_usuario_desativado">Usuário inativo. Por favor, entre em contato com o administrador do sistema.</string>
+		    <string name="texto_login_usuario_senha_incorretos">Nome de usuário incorreto ou senha incorreta.</string>
+		    <string name="texto_login_aguarde">Acessando o sistema...</string>
+		    <string name="texto_login_imei_sem_internet">Você está sem acesso à internet. Os dados serão sincronizados na próxima conexão.</string>
+		    <string name="texto_login_imei_nao_cadastrado">Este aparelho não está registrado no sistema. Acesse com seu login e senha.</string>
+		<!-- Fim Etapa Login -->
+		
+		<!-- Etapa Check-->
+		    <string name="texto_check_ativando_gps">Deseja ativar o GPS para aumentar a precisão da sua localização?</string>
+		    <string name="texto_check_aguardando_posicao_gps">Aguarde enquanto a sua localização é encontrada. O GPS pode levar alguns minutos.</string>
+		    <string name="texto_check_envio">Realizando o seu Check-in...</string>
+		    <string name="texto_check_concluido_envio">Check-in realizado com sucesso!</string>
+		    <string name="texto_check_envio_sem_internet">Você está sem acesso à internet. Os dados estão salvos e serão enviados de forma automática na próxima conexão.</string>
+		   	<string name="texto_check_assinatura_errada">Assinatura inválida.</string>
+		    <string name="texto_checkout_enviando">Validando o seu Check-out...</string>
+		    <string name="texto_checkout_confirmacao">Check-out validado com sucesso!</string>
+		<!-- Fim Etapa Check -->
+		
+		<!-- Etapa Listagem -->
+		    <string name="texto_listagem_acesso_unico">Para iniciar este atendimento é preciso finalizar o</string>
+		    <string name="texto_listagem_finalizado">Este atendimento já foi finalizado.</string>
+		<!-- Fim Etapa Listagem -->
+	<!-- FIM TEXTO DE NOTIFICAÇÕES -->
+</resources>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    android:fillViewport="true" >
+
+<LinearLayout
+    android:id="@+id/linear"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >   
+     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#CCFF00" >
+    </LinearLayout>	    
+    
+    <LinearLayout
+        android:id="@+id/espaco2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#cccccc"
+        android:gravity="right"
+        android:paddingRight="15dp" >
+
+	    <ImageView
+	        android:id="@+id/imageView"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_topo"
+	        android:paddingBottom="0dp" />
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <!-- Bloco Atendimento -->
+     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/grupos_atendimentos"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_andamento_texto"
+            android:drawableLeft="@drawable/ico_andamento"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/texto_btn_atendimento"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/qtd_atendimento"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_andamento_numero"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    
+    <!-- Fim Bloco Atendimento --> 
+    
+    <!-- Bloco Espera -->
+     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/grupos_espera"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_espera_texto"
+            android:drawableLeft="@drawable/ico_espera"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/texto_btn_espera"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/qtd_espera"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_espera_numero"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    <!-- Fim Bloco Espera --> 
+    
+    <!-- Bloco Atraso -->
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/grupos_atrasados"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_atrasados_texto"
+            android:drawableLeft="@drawable/ico_atraso"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/texto_btn_atraso"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/qtd_atrasados"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_atrasados_numero"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    
+    <!-- Fim Bloco Atraso --> 
+    
+    <!-- Bloco Finalizados -->
+     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/grupos_finalizados"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_finalizados_texto"
+            android:drawableLeft="@drawable/ico_finalizado"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/texto_btn_finalizados"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/qtd_finalizados"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/botao_finalizados_numero"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    
+     <!-- Fim Bloco Finalizados -->
+     
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="4"
+         android:background="#F2F2F2"
+         android:paddingBottom="2dp"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:paddingTop="20dp" >
+
+         <Button
+             android:id="@+id/atualizar"
+             android:layout_width="wrap_content"
+             android:layout_height="51dp"
+             android:drawableLeft="@drawable/navigation_refresh"
+             android:text="@string/texto_btn_sincronizar"
+             android:textColor="#000000"
+             android:textSize="12sp" />
+
+         <Button
+             android:id="@+id/local"
+             android:layout_width="wrap_content"
+             android:layout_height="51dp"
+             android:layout_weight="0.57"
+             android:drawableLeft="@drawable/my_location"
+             android:text="@string/texto_btn_local"
+             android:textColor="#000000"
+             android:textSize="12sp" />
+     </LinearLayout>
+
+<!--     
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:paddingTop="15dp"
+	        android:paddingBottom="15dp" >
+
+		<Button
+		    android:id="@+id/btnIniciarServico"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:text="Iniciar Serviço"
+		    android:textColor="#FFFFFF"
+		    android:textSize="14sp"
+		    android:background="@drawable/botao_check" />
+
+	    <Button
+	        android:id="@+id/btnFinalizarServico"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:paddingRight="0dp"
+	        android:text="Finalizar Serviço"
+	        android:textColor="#FFFFFF"
+	        android:textSize="14sp"
+	        android:background="@drawable/botao_check" />
+	    
+	     </RelativeLayout>  
+  -->   
+		<TableLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="5dp"
+		    android:baselineAligned="true"
+		    android:background="#CCFF00" >
+		    <!-- inicio da linha Verde-->
+		    <TableRow
+		        android:id="@+id/tableRow8"
+		        android:layout_width="fill_parent"
+		        android:layout_height="5dp"
+		        android:baselineAligned="true"
+		        android:padding="5dip"
+		        android:background="#CCFF00" >
+		    </TableRow>
+			<!-- fim da linha Verde -->
+		</TableLayout>						
+     	          	     
+</LinearLayout>
+	
+</ScrollView>

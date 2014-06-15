@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.veritime2"
+    android:versionCode="17"
+    android:versionName="1.2.3" android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>    
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_veritime"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.veritime2.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+			android:name="br.com.veritime2.Login"
+			android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity
+			android:name="br.com.veritime2.Atendimentos"
+			android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+         <activity
+			android:name="br.com.veritime2.Atendimentos2"
+			android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+         <activity
+			android:name="br.com.veritime2.GruposAtendimentos"
+			android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity
+			android:name="br.com.veritime2.CheckOut"
+			android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity
+			android:name="br.com.veritime2.Detalhes"
+			android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        
+	 	<service android:name=".Servico">
+	 		<intent-filter>
+	 			<action android:name="INICIAR_SERVICO" />
+	 			<category android:name="android.intent.category.DEFAULT" />
+	 		</intent-filter>
+		</service>
+        
+      </application>
+
+</manifest>

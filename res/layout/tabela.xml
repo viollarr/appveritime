@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CCFF00"
+    android:paddingTop="5dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/espaco2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:paddingRight="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="30dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="15dp"
+             android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_topo" />
+
+    </RelativeLayout>
+	</LinearLayout>
+    <LinearLayout
+   		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="10dp">
+        	
+    	<TextView
+        	android:id="@+id/texto"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:textColor="#fff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/espaco4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+       	android:paddingBottom="2dp">
+	    
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:divider="#ffffff"
+        	android:dividerHeight="1dp"            
+            android:layout_weight="1" 
+            >
+        </ListView>
+        
+	</LinearLayout>	
+    
+</LinearLayout>

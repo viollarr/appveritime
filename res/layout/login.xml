@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CCFF00"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#CCFF00" >
+        
+        <ImageView
+		        android:id="@+id/imageView"
+		      	android:layout_width="wrap_content"
+        		android:layout_height="140dp"
+		        android:src="@drawable/ic_topo"
+		        android:layout_gravity="center" />
+        
+    <TextView
+        android:id="@+id/textoNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:text="@string/nome"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/texto_login_input" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textoSenha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:text="@string/senha"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/texto_senha_input"
+            android:password="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/site"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="@string/texto_link_site" />
+       
+ </LinearLayout>
+</ScrollView>    
+
